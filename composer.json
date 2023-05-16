@@ -1,0 +1,28 @@
+{
+    "name": "apackage/astore",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "vcherrn",
+            "email": "ivanchern6@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Apackage\\Astore\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Apackage\\Astore\\StoreServiceProvider"
+            ],
+            "aliases": {
+                "Debugbar": "Apackage\\Astore\\Facade"
+            }
+        }
+    }
+   
+}
